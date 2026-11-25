@@ -28,8 +28,8 @@ const [total, setTotal] = useState(0);
 });
 
         const response = await fetch(
-          `http://localhost:8080/api/products?${params}`
-        );
+  `https://paginated-product-catalog-api.onrender.com/api/products?${params}`
+);
 
         if (!response.ok) {
           throw new Error("Failed to fetch products");
